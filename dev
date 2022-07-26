@@ -1,0 +1,12 @@
+[loadbalancer]
+lb01 ansible_connection=local
+
+[webserver]
+ap01 ansible_host=192.168.56.0 ansible_ssh_user=vagrant
+ap02 ansible_connection=local
+
+[database]
+db01 ansible_connection=local
+
+[control]
+control ansible_connection=local
